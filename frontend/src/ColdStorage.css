@@ -1,0 +1,24 @@
+.storage-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.storage-card{padding:25px}
+.storage-card.storage-alert{border-color:#ffd2d7}
+.storage-card-top{display:flex;align-items:flex-start;justify-content:space-between}
+.storage-title{display:flex;gap:13px;align-items:center}
+.large-fridge-icon{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:#eef5fb;color:#4d94ba}
+.storage-title>div:last-child>span{font-size:10px;font-weight:800;letter-spacing:1.4px;color:#9ba4ad}
+.storage-title h2{margin:4px 0 0;font:800 22px Manrope}
+.storage-state{padding:7px 10px;border-radius:999px;font-size:10px;font-weight:800}
+.storage-state.good{background:#eaf8f2;color:var(--green)}
+.storage-state.bad{background:#fff0f0;color:#c33245}
+.temperature-block{text-align:center;padding:38px 0 30px;border-bottom:1px solid #edf0f2}
+.temperature-block>span,.temperature-block>small{display:block;color:#8f98a1;font-size:12px}
+.temperature-block strong{display:block;font:800 55px Manrope;margin:7px 0;color:#29333d}
+.sensor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:20px}
+.sensor-grid div{min-height:78px;padding:12px;border-radius:10px;background:#f7f8fa}
+.sensor-grid svg{color:#71808c;margin-bottom:8px}
+.sensor-grid span,.sensor-grid b{display:block}
+.sensor-grid span{font-size:10px;color:#8e98a2}
+.sensor-grid b{font-size:13px;margin-top:4px;color:#303943}
+.last-reading{display:block;margin-top:17px;color:#9aa3ab;font-size:10px}
+.storage-empty{padding:50px;text-align:center;color:#8d969f}
+@media(max-width:1000px){.storage-cards{grid-template-columns:1fr}}
+@media(max-width:700px){.sensor-grid{grid-template-columns:1fr 1fr}.storage-card{padding:20px}.temperature-block strong{font-size:46px}}

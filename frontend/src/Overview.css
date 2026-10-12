@@ -1,0 +1,53 @@
+.overview-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:22px}
+.overview-stat{min-height:125px;padding:22px;display:flex;align-items:center;gap:16px}
+.overview-stat-icon{width:51px;height:51px;border-radius:14px;display:grid;place-items:center}
+.overview-stat-icon.red{background:#fff0f2;color:var(--red)}
+.overview-stat-icon.amber{background:#fff6e7;color:var(--amber)}
+.overview-stat-icon.blue{background:#eef5fb;color:#3f91b9}
+.overview-stat-icon.green{background:#ebfaf4;color:var(--green)}
+.overview-stat p{margin:0 0 5px;color:#89929b;font-size:14px}
+.overview-stat strong{display:block;font:800 30px Manrope;color:#303841}
+.overview-stat span{display:block;margin-top:2px;color:#9aa2aa;font-size:11px}
+.overview-grid{display:grid;grid-template-columns:1.65fr .85fr;gap:22px;margin-bottom:22px}
+.overview-panel{padding:22px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.panel-head h2{margin:0 0 5px;font:800 20px Manrope;color:#303841}
+.panel-head p{margin:0;color:#929aa2;font-size:13px}
+.panel-head a{color:#68727c;text-decoration:none;background:#f6f7f8;padding:9px 12px;border-radius:8px;font-size:12px;font-weight:700}
+.overview-blood-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.overview-blood-card{min-height:125px;border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column}
+.overview-blood-card span{color:#a04f5b;font-size:14px;font-weight:700}
+.overview-blood-card strong{font:800 29px Manrope;margin-top:13px;color:#303841}
+.overview-blood-card small{color:#9ca4ab;font-size:11px;margin-top:2px}
+.overview-blood-card>div{height:4px;background:#f0f1f3;border-radius:5px;margin-top:auto;overflow:hidden}
+.overview-blood-card i{display:block;height:100%;background:var(--red);border-radius:5px}
+.overview-storage-list{display:grid}
+.overview-storage{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #edf0f2}
+.overview-storage:last-child{border-bottom:0}
+.storage-icon{width:39px;height:39px;border-radius:10px;background:#eef5fb;color:#4d94ba;display:grid;place-items:center}
+.storage-name{flex:1;min-width:0}
+.storage-name strong,.storage-name span{display:block}
+.storage-name strong{font-size:14px;color:#343b43}
+.storage-name span{font-size:10px;color:#9aa3ab;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.overview-storage>b{font-size:13px;color:#65707a}
+.overview-storage em,.status-pill{font-style:normal;font-size:10px;font-weight:800;padding:5px 8px;border-radius:999px}
+.overview-storage .safe,.status-pill.safe{background:#eaf8f2;color:var(--green)}
+.overview-storage .danger{background:#fff0f0;color:#c33245}
+.status-pill.neutral{background:#eef1f5;color:#66717f}
+.overview-recent{padding:22px}
+.recent-table-wrap{overflow:auto}
+.recent-table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+.recent-table th{text-align:left;color:#98a0aa;font-size:10px;letter-spacing:1px;padding:12px;border-bottom:1px solid var(--line)}
+.recent-table td{padding:16px 12px;border-bottom:1px solid #f0f1f3;color:#66707a}
+.recent-table td strong{color:#343b43}
+.blood-pill{background:#fff0f2;color:var(--red);padding:6px 9px;border-radius:7px;font-weight:800}
+.empty-cell{text-align:center;padding:40px!important;color:#9aa3ab}
+.page-error{margin:-10px 0 20px;padding:12px;background:#fff0f1;color:#b52d40;border-radius:9px;font-size:13px}
+@media(max-width:1250px){
+ .overview-stats{grid-template-columns:repeat(2,1fr)}
+ .overview-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+ .overview-stats{grid-template-columns:1fr}
+ .overview-blood-grid{grid-template-columns:repeat(2,1fr)}
+}
