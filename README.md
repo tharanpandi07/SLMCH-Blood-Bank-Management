@@ -74,11 +74,10 @@ Install the following before running the project:
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/tharanpandi07/SLMCH-Blood-Bank-Management
 cd blood-bank-management-system
 ```
 
-Replace `YOUR_REPOSITORY_URL` with your actual GitHub repository URL.
 
 ### 2. Configure the Database
 
